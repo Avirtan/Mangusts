@@ -19,7 +19,7 @@ import model.Posts;
 /**
  * Servlet implementation class Index
  */
-@WebServlet("/")
+@WebServlet("/Index")
 public class Index extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private Connections  c = null;
