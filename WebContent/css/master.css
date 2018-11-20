@@ -1,0 +1,94 @@
+@font-face {
+font-family: "BeerRegular";
+src: url("fonts/BeerRegular/BeerRegular.eot");
+src: url("fonts/BeerRegular/BeerRegular.eot?#iefix")format("embedded-opentype"),
+url("fonts/BeerRegular/BeerRegular.woff") format("woff"),
+url("fonts/BeerRegular/BeerRegular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.vhod{
+    font-size: 20px;
+    font-family: BeerRegular;
+    text-transform: uppercase;
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    width: 9%;
+    border: 2px  solid black;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #e9eff1;
+}
+.reg{
+    font-size: 20px;
+    font-family: BeerRegular;
+    text-transform: uppercase;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    width: 9%;
+    border: 2px  solid black;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #e9eff1;
+}
+#mainmenu{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-family: BeerRegular;
+    background-color: #e9eff1;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px  solid black;
+    border-radius: 30px 30px 30px 30px;
+}
+.content{
+    margin-top: 5px;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.block{
+    border: 2px  solid black;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #e9eff1;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 768px) {
+    #mainmenu{
+        margin: 0px;
+    }
+    .content{
+        text-align: center;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+    .vhod{
+        position: sticky;
+        clear: both;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .reg{
+        position: sticky;
+        clear: both;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
