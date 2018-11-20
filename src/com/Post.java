@@ -71,7 +71,7 @@ public class Post extends HttpServlet {
 			response.sendRedirect(request.getContextPath()+"/Post?p="+this.id);
 		}else{
 			HttpSession se = request.getSession(true);
-			int id  = (int) se.getAttribute("id_user");
+			int id  = Integer.parseInt(se.getAttribute("id_user").toString());
 			new Comment().AddComment(comm, id, this.id);
 			response.sendRedirect(request.getContextPath()+"/Post?p="+this.id);
 		}
